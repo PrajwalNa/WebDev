@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  ,
+  style="
+    font-family: 'Lucida Console';
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+  "
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../Javascript/test.js"></script>
+    <title>Test Form</title>
+    <h1>Demo Form</h1>
+  </head>
+  <body>
+    <form action="./next.html" , method="post">
+      Username:
+      <input
+        type="text"
+        name="username"
+        id="username"
+        ,
+        required,
+        placeholder="John Doe"
+        ,
+        style="
+          font-family: 'Lucida Console';
+          background-color: dimgray;
+          color: whitesmoke;
+        "
+      />
+      <br />
+      Password:
+      <input
+        type="password"
+        name="password"
+        id="password"
+        ,
+        required,
+        placeholder="Password@123"
+        ,
+        style="
+          font-family: 'Lucida Console';
+          background-color: dimgray;
+          color: whitesmoke;
+        "
+      />
+      <br />
+      <br />
+      <input
+        type="button"
+        value="Validate Password"
+        ,
+        onclick="return ValidatePass()"
+        ,
+        style="
+          background-color: black;
+          color: aliceblue;
+          font-family: 'Lucida Console';
+        "
+      />
+      <input
+        type="submit"
+        value="Submit"
+        ,
+        style="
+          background-color: black;
+          color: aliceblue;
+          font-family: 'Lucida Console';
+        "
+      />
+    </form>
+  </body>
+</html>
